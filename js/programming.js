@@ -31,7 +31,7 @@ const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
 
 
 async  function love (amir="Cairo" ){
-let res = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=47a55598a9e249b8b23191331221610&q=${amir}&days=3&aqi=no&alerts=no`);
+let res = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=47a55598a9e249b8b23191331221610&q=${amir}&days=3&aqi=no&alerts=no`);
 myArrayResponse = await res.json();
 displayToday();
 tomorrow ();
